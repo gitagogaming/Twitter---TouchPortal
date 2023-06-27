@@ -84,7 +84,7 @@ Default: <b>False</b> Possible choices: ['True', 'False']</li>
 | .state.Twitter.ProfilePhoto_URL | TW | Twitter Profile Photo URL |  |   |
 </details>
 
-<details id='gitago.twitter.tweetsstates'><summary><b>Category:</b> Twitter Extras <small><ins>(Click to expand)</ins></small></summary>
+<details id='gitago.twitter.tweetsstates'><summary><b>Category:</b> Twitter Extras | Tweets <small><ins>(Click to expand)</ins></small></summary>
 
 
 | Id | Description | DefaultValue | parentGroup |
