@@ -1,11 +1,11 @@
 # Twitter-Extras | Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description) 
-    - [Actions](#actions)
-        - [Twitter Extras](#gitago.twitter.mainactions)
-    - [States](#states)
-        - [Twitter Extras](#gitago.twitter.mainstates)
-        - [Twitter Extras](#gitago.twitter.tweetsstates)
+  - [Actions](#actions)
+    - [Twitter Extras](#gitago.twitter.mainactions)
+  - [States](#states)
+    - [Twitter Extras](#gitago.twitter.mainstates)
+    - [Twitter Extras | Tweets](#gitago.twitter.tweetsstates)
   - [Bugs and Support](#bugs-and-suggestion)
 
 # Description
