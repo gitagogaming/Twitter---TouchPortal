@@ -1,7 +1,6 @@
 # Twitter-Extras | Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description) 
-  - [Settings Overview](#Settings-Overview)
   - [Features](#Features)
     - [Actions](#actions)
         - [Twitter Extras](#gitago.twitter.mainactions)
@@ -14,28 +13,6 @@
 # Description
 
 This documentation generated for Twitter Extras V100 with [Python TouchPortal SDK](https://github.com/KillerBOSS2019/TouchPortal-API).
-
-## Settings Overview
-| Read-only | Type | Default Value |
-| --- | --- | --- |
-| False | text | https://developer.twitter.com/en/portal/projects/ |
-
-| Read-only | Type | Default Value |
-| --- | --- | --- |
-| False | text |  |
-
-| Read-only | Type | Default Value |
-| --- | --- | --- |
-| False | text |  |
-
-| Read-only | Type | Default Value |
-| --- | --- | --- |
-| False | text |  |
-
-| Read-only | Type | Default Value |
-| --- | --- | --- |
-| False | text |  |
-
 
 # Features
 
