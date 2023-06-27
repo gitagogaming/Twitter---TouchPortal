@@ -2,7 +2,7 @@
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description) 
   - [Actions](#actions)
-    - [Twitter Extras](#gitago.twitter.mainactions)
+    - [Main Actions](#gitago.twitter.mainactions)
   - [States](#states)
     - [Twitter Extras](#gitago.twitter.mainstates)
     - [Twitter Extras | Tweets](#gitago.twitter.tweetsstates)
