@@ -8,11 +8,16 @@
         - [Twitter Extras](#gitago.twitter.mainstates)
         - [Twitter Extras](#gitago.twitter.tweetsstates)
   - [Bugs and Support](#bugs-and-suggestion)
-  - [License](#license)
-  
-# Description
 
-This documentation generated for Twitter Extras V100 with [Python TouchPortal SDK](https://github.com/KillerBOSS2019/TouchPortal-API).
+# Description
+Do things on your Twitter using Touch Portal
+
+• Send Poll Tweet: Engage your audience with interactive poll tweets.
+• Send Tweet: Share your thoughts and updates with a single click.
+• Send Tweet with Media: Enhance your tweets with captivating images or videos.
+• Change Profile Picture: Easily update your profile image to reflect your personal brand.
+• Change Display Name: Customize your display name to make a lasting impression.
+
 
 # Features
 
@@ -101,6 +106,4 @@ Default: <b>False</b> Possible choices: ['True', 'False']</li>
 Open an issue on github or join offical [TouchPortal Discord](https://discord.gg/MgxQb8r) for support.
 
 
-# License
-This plugin is licensed under the [GPL 3.0 License] - see the [LICENSE](LICENSE) file for more information.
 
