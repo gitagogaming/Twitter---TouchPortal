@@ -1,7 +1,6 @@
 # Twitter-Extras | Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description) 
-  - [Features](#Features)
     - [Actions](#actions)
         - [Twitter Extras](#gitago.twitter.mainactions)
     - [States](#states)
@@ -12,14 +11,12 @@
 # Description
 Do things on your Twitter using Touch Portal
 
-• Send Poll Tweet: Engage your audience with interactive poll tweets.
-• Send Tweet: Share your thoughts and updates with a single click.
-• Send Tweet with Media: Enhance your tweets with captivating images or videos.
-• Change Profile Picture: Easily update your profile image to reflect your personal brand.
-• Change Display Name: Customize your display name to make a lasting impression.
+- Send Poll Tweet: Engage your audience with interactive poll tweets.
+- Send Tweet: Share your thoughts and updates with a single click.
+- Send Tweet with Media: Enhance your tweets with captivating images or videos.
+- Change Profile Picture: Easily update your profile image to reflect your personal brand.
+- Change Display Name: Customize your display name to make a lasting impression.
 
-
-# Features
 
 ## Actions
 <details open id='gitago.twitter.mainactions'><summary><b>Category:</b> Twitter Extras <small><ins>(Click to expand)</ins></small></summary><table>
