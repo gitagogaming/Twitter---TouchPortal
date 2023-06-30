@@ -1,7 +1,7 @@
 # Twitter-Extras | Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description)
-  - [Tweet Media](#Tweet-Restrictions)
+  - [Tweet Uppload Restrictions](#Tweet-Restrictions)
   - [Actions](#actions)
     - [Main Actions](#gitago.twitter.mainactions)
   - [States](#states)
