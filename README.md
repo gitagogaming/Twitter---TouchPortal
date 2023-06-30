@@ -1,6 +1,7 @@
 # Twitter-Extras | Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
-  - [Description](#description) 
+  - [Description](#description)
+  - [Tweet Media](#Tweet-Restrictions)
   - [Actions](#actions)
     - [Main Actions](#gitago.twitter.mainactions)
   - [States](#states)
@@ -17,6 +18,28 @@ Do things on your Twitter using Touch Portal
 - Change Profile Picture: Easily update your profile image to reflect your personal brand.
 - Change Display Name: Customize your display name to make a lasting impression.
 
+
+# Tweet-Restrictions
+ ## Image Upload Recommendations / Restrictions
+- Supported image media types: JPG, PNG, GIF, WEBP
+- Image size should be less than 5 MB
+- Animated GIF size should be less than 15 MB
+- Animated GIF Number of frames should be less than 350
+- Resolution should be less than 1280x1080 (width x height)
+
+
+## Video Upload Recommendations / Restrictions
+- Video Codec: H264 High Profile
+- Frame Rates: 30 FPS, 60 FPS (should be 60 or less)
+- Video Resolution: 1280x720 (landscape), 720x1280 (portrait), 720x720 (square)
+- Minimum Video Bitrate: 5,000 kbps
+- Minimum Audio Bitrate: 128 kbps
+- Aspect Ratio: 16:9 (landscape or portrait), 1:1 (square)
+- Audio Codec: AAC LC (Recommended)
+- File Size: Must not exceed 512 mb
+- Duration: must be between 0.5 seconds and 140 seconds
+
+__If you are still having issue uploading a media file, please post the file here and explain what you have tried so far.__
 
 ## Actions
 <details open id='gitago.twitter.mainactions'><summary><b>Category:</b> Twitter Extras <small><ins>(Click to expand)</ins></small></summary><table>
