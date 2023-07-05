@@ -1,4 +1,11 @@
-# Twitter-Extras | Built for Touch Portal
+
+<p align="center">
+  <img src="https://github.com/gitagogaming/Twitter---TouchPortal/assets/76603653/170f1ae1-e334-4660-a3e6-18a0f9931c06" alt="twitter_extras" style="width: 50%;">
+</p>
+
+
+# Twitter-Extras
+Built for Touch Portal
 - [Twitter Extras](#Twitter-Extras)
   - [Description](#description)
   - [Tweet Upload Restrictions](#Tweet-Restrictions)
