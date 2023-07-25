@@ -1,8 +1,7 @@
 
 <p align="center">
-  <img src="https://github.com/gitagogaming/Twitter---TouchPortal/assets/76603653/f9d25c81-15bd-4e9f-8ae3-949cc7214f20" alt="twitter_extras" style="width: 75%;">
+  <img src="https://github.com/gitagogaming/Twitter---TouchPortal/assets/76603653/f9d25c81-15bd-4e9f-8ae3-949cc7214f20" alt="twitter_extras" style="width: 85%;">
 </p>
-![twitter (1)](https://github.com/gitagogaming/Twitter---TouchPortal/assets/76603653/f9d25c81-15bd-4e9f-8ae3-949cc7214f20)
 
 # Twitter-Extras
 Built for Touch Portal
