@@ -2,6 +2,7 @@ PLUGIN_ID = "gitago.twitter"
 
 PLUGIN_FOLDER = "Twitter_Extras"
 PLUGIN_NAME = "Twitter_Extras"
+PLUGIN_ICON = "Twitter_Logo_26px.png"
 
 TP_PLUGIN_INFO = {
     "sdk": 6,
@@ -61,12 +62,12 @@ TP_PLUGIN_CATEGORIES = {
     "main": {
         "id": PLUGIN_ID + ".main",
         "name": "Twitter Extras",
-        "imagepath": "%TP_PLUGIN_FOLDER%Twitter_Extras\\Twitter_Logo_26px.png"
+        "imagepath": f"%TP_PLUGIN_FOLDER%Twitter_Extras\\{PLUGIN_ICON}"
     },
     "tweets": {
         "id": PLUGIN_ID + ".tweets",
         "name": "Twitter Extras | Tweets",
-        "imagepath": "%TP_PLUGIN_FOLDER%Twitter_Extras\\Twitter_Logo_26px.png"
+        "imagepath": f"%TP_PLUGIN_FOLDER%Twitter_Extras\\{PLUGIN_ICON}"
     }
 }
 
