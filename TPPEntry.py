@@ -1,18 +1,20 @@
 PLUGIN_ID = "gitago.twitter"
 
-
+PLUGIN_FOLDER = "Twitter_Extras"
+PLUGIN_NAME = "Twitter_Extras"
 
 TP_PLUGIN_INFO = {
     "sdk": 6,
     "version": 100,
     "name": "Twitter Extras",
     "id": PLUGIN_ID,
-    "plugin_start_cmd_windows": "%TP_PLUGIN_FOLDER%Twitter_Extras\\Twitter_Extras.exe",
+    "plugin_start_cmd_windows": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_NAME}.exe",
+    "plugin_start_cmd_linux": f"sh %TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}//start.sh {PLUGIN_NAME}",
+    "plugin_start_cmd_mac": f"sh %TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}//start.sh {PLUGIN_NAME}",
     "configuration": {
         "colorDark": "#222423",
         "colorLight": "#1D9BF0"
     },
-  #  "plugin_start_cmd": "%TP_PLUGIN_FOLDER%Twitter\\Twitter_Plugin.exe"
 }
 
 
