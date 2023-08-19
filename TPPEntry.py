@@ -6,7 +6,7 @@ PLUGIN_ICON = "Twitter_Logo_26px.png"
 
 TP_PLUGIN_INFO = {
     "sdk": 6,
-    "version": 100,
+    "version": 101,
     "name": "Twitter Extras",
     "id": PLUGIN_ID,
     "plugin_start_cmd_windows": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_NAME}.exe",
@@ -54,6 +54,11 @@ TP_PLUGIN_SETTINGS = {
         "default": "",
         "type": "text",
         "isPassword": True
+    },
+    "6": {
+        "name": "Debug Mode",
+        "default": "Off",
+        "type": "text",
     }
 
 }
@@ -62,12 +67,12 @@ TP_PLUGIN_CATEGORIES = {
     "main": {
         "id": PLUGIN_ID + ".main",
         "name": "Twitter Extras",
-        "imagepath": f"%TP_PLUGIN_FOLDER%Twitter_Extras\\{PLUGIN_ICON}"
+        "imagepath": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_ICON}"
     },
     "tweets": {
         "id": PLUGIN_ID + ".tweets",
         "name": "Twitter Extras | Tweets",
-        "imagepath": f"%TP_PLUGIN_FOLDER%Twitter_Extras\\{PLUGIN_ICON}"
+        "imagepath": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_ICON}"
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "sdk": 6,
-  "version": 100,
+  "version": 101,
   "name": "Twitter Extras",
   "id": "gitago.twitter",
   "configuration": {
@@ -352,6 +352,12 @@
       "type": "text",
       "default": "",
       "isPassword": true,
+      "readOnly": false
+    },
+    {
+      "name": "Debug Mode",
+      "type": "text",
+      "default": "Off",
       "readOnly": false
     }
   ]

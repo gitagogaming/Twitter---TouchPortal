@@ -16,7 +16,7 @@
 #
 # pyinstaller --onefile main.py --name Twitter_Plugin.exe
 # pyinstaller --add-data "plugin_config.txt;." --onefile main.py --name Twitter_Plugin.exe
-
+import ast
 import tweepy
 import os
 import TouchPortalAPI
@@ -155,6 +155,7 @@ class TwitterAPI:
             
     
             media_upload = self.api.media_upload(media, media_category=media_category)
+            text = ast.literal_eval(f'"{text}"')
             response = self.client.create_tweet(
                 text=text,
                 media_ids=[media_upload.media_id],
@@ -165,6 +166,7 @@ class TwitterAPI:
             self.last_tweet_id = response.data['id']
             return response
         else:
+            text = ast.literal_eval(f'"{text}"')
             response = self.client.create_tweet(
                 text=text,
                 for_super_followers_only=super_followers_only
@@ -215,7 +217,7 @@ class ClientInterface(TouchPortalAPI.Client):
 
         # Log settings
         self.logLevel = "INFO"
-        self.setLogFile("Twitter_Plugin")
+        self.setLogFile("Twitter_Extras.log")
     
         # Register events
         self.add_listener(TYPES.onConnect, self.onConnect)
@@ -263,6 +265,12 @@ class ClientInterface(TouchPortalAPI.Client):
 
         
         self.plugin_settings = self.settingsToDict(data["settings"])
+        if self.plugin_settings['Debug Mode'].lower() == "on":
+            self.log.setLogLevel("DEBUG")
+            self.log.info("set log level to debug")
+        else:
+            self.log.setLogLevel("INFO")
+            self.log.info("set log level to info")
 
        # print(self.settingsToDict(data["settings"]))
         twitter.auth_check()
@@ -273,6 +281,14 @@ class ClientInterface(TouchPortalAPI.Client):
         self.log.debug(f"Connection: {data}")
         ## pushing settings chagned to the plugin_settings variable
         self.plugin_settings = self.settingsToDict(data['values'])
+        if self.plugin_settings['Debug Mode'].lower() == "on":
+            self.setLogLevel("DEBUG")
+            print("set log level to debug")
+        else:
+            self.setLogLevel("INFO")
+            print("set log level to info")
+
+
         response = twitter.auth_check()
         if response == True:
             plugin.stateUpdate(stateId=PLUGIN_ID + ".state.Twitter_Status", stateValue="Connected")
