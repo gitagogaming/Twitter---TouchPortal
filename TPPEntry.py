@@ -6,7 +6,7 @@ PLUGIN_ICON = "Twitter_Logo_26px.png"
 
 TP_PLUGIN_INFO = {
     "sdk": 6,
-    "version": 101,
+    "version": 102,
     "name": "Twitter Extras",
     "id": PLUGIN_ID,
     "plugin_start_cmd_windows": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_NAME}.exe",

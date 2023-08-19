@@ -1,6 +1,6 @@
 {
   "sdk": 6,
-  "version": 101,
+  "version": 102,
   "name": "Twitter Extras",
   "id": "gitago.twitter",
   "configuration": {
