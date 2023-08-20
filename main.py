@@ -29,6 +29,8 @@ import time
 ### Local Imports
 from update_check import plugin_update_check, GITHUB_PLUGIN_NAME, GITHUB_USER_NAME, PLUGIN_NAME
 
+import sys
+
 
 
 class TwitterAPI:
@@ -426,7 +428,7 @@ if __name__ == "__main__":
     finally:
         plugin.disconnect()
         del plugin
-        exit(ret)
+        sys.exit(ret)
 
 
 
