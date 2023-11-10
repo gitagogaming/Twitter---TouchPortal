@@ -1,6 +1,6 @@
 {
   "sdk": 6,
-  "version": 102,
+  "version": 103,
   "name": "Twitter Extras",
   "id": "gitago.twitter",
   "configuration": {
@@ -168,7 +168,8 @@
                 "*.png",
                 "*.jpeg",
                 "*.mov",
-                "*.mp4"
+                "*.mp4", 
+                "*.gif"
               ]
             }
           ]

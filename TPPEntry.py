@@ -6,7 +6,7 @@ PLUGIN_ICON = "Twitter_Logo_26px.png"
 
 TP_PLUGIN_INFO = {
     "sdk": 6,
-    "version": 102,
+    "version": 103,
     "name": "Twitter Extras",
     "id": PLUGIN_ID,
     "plugin_start_cmd_windows": f"%TP_PLUGIN_FOLDER%{PLUGIN_FOLDER}\\{PLUGIN_NAME}.exe",
@@ -206,7 +206,7 @@ TP_PLUGIN_ACTIONS = {
             "4": {
                 "id": PLUGIN_ID + ".act.new_tweet_w_media.message.media",
                 "type": "file",
-                "extensions": ["*.jpg", "*.png", "*.jpeg", "*.mov", "*.mp4"],
+                "extensions": ["*.jpg", "*.png", "*.jpeg", "*.mov", "*.mp4", "*.gif"],
                 "label": "The Media File Location",
                 "default": ""
             }, 
