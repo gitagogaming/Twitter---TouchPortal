@@ -131,8 +131,9 @@ class TwitterAPI:
         ## Images = JPG, PNG, 5mb or less
         ## Videos = MP4, MOV, 512mb or less and less than 140 seconds
         """
+        chunked_status = False
         if media is not None:
-            valid_image_extensions = ['.jpg', '.jpeg', '.png']
+            valid_image_extensions = ['.jpg', '.jpeg', '.png', '.gif']
             valid_video_extensions = ['.mp4', '.mov']
             valid_image_size_limit = 5 * 1024 * 1024  # 5mb in bytes
             valid_video_size_limit = 512 * 1024 * 1024  # 512mb in bytes
@@ -141,7 +142,10 @@ class TwitterAPI:
             if file_extension in valid_image_extensions:
                 file_size = os.path.getsize(media)
                 if file_size <= valid_image_size_limit:
-                    media_category = "tweet_image"
+                    if file_extension == ".gif":
+                        media_category = "tweet_gif"
+                    else:
+                        media_category = "tweet_image"
                 else:
                     # Compress the image here if needed
                     media_category = "tweet_image"  # Placeholder, update with the compressed image category
@@ -153,10 +157,12 @@ class TwitterAPI:
                 else:
                     raise ValueError("Video file size exceeds the limit.")
             else:
-                raise ValueError("Invalid file format. Only JPG, JPEG, PNG, MP4, and MOV files are supported.")
+                raise ValueError("Invalid file format. Only JPG, JPEG, PNG, GIF, MP4, and MOV files are supported.")
             
-    
-            media_upload = self.api.media_upload(media, media_category=media_category)
+            if media_category == "tweet_gif":
+                chunked_status = True
+                
+            media_upload = self.api.media_upload(media, media_category=media_category, chunked=chunked_status)
             text = ast.literal_eval(f'"{text}"')
             response = self.client.create_tweet(
                 text=text,
@@ -319,6 +325,9 @@ class ClientInterface(TouchPortalAPI.Client):
                  super_followers_only = False
 
             response = twitter.create_new_tweet(data['data'][0]['value'], reply_settings=data['data'][1]['value'], super_followers_only=super_followers_only)
+
+            ## make a catch here for any current uploads of tweet so a person doesnt get impatient with the upload time on videos and then tweet again
+            
             plugin.stateUpdate(stateId=PLUGIN_ID + ".state.Twitter.Last_Tweet_ID", stateValue=response.data['id'])
             plugin.stateUpdate(stateId=PLUGIN_ID + ".state.Twitter.Last_Tweet_URL", stateValue=f"https://twitter.com/user/status/{response.data['id']}")
 
